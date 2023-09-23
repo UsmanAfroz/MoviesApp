@@ -1,0 +1,62 @@
+body {
+	background: #141414;
+	color: #ffffff;
+	margin: 0; /* Remove margin for the whole body */
+	padding: 0; /* Remove padding for the whole body */
+  }
+  
+
+  .row {
+	overflow-x: auto;
+	flex-wrap:nowrap;
+	
+	margin-left: 5px;
+
+  }
+  
+ 
+.container:hover .overlay {
+	opacity: 1;
+}
+
+.removeFavorites{
+		margin-top: 2rem;
+}
+
+
+  .imageEffect{
+	position: relative;
+	transition: transform 0.2s;
+  }
+  
+  .container:last-child {
+	margin-right: 0; /* Remove margin from the last image container to prevent extra space */
+  }
+
+  /* .add-favorites{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+  } */
+
+  .overlay {
+	position: absolute;
+	background: rgba(21, 20, 20, 0.8);
+	width: 90%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 20px;
+	text-align: center;
+}
+  
+  /* .image-container > img {
+	
+    object-fit: cover;
+    margin-bottom: 15px;
+
+	
+  } */
+  

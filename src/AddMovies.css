@@ -1,0 +1,43 @@
+.movies-form{
+     display: grid;
+     margin-top: 10px;
+    place-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#141414;
+}
+
+.movies-form > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.movies-form > form > input{
+    width: 332px;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    color: #0b0101;
+    background-color: rgb(248, 245, 241);
+}
+
+.movies-form > form > button{
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.movies-form > form > button:hover{
+    background-color: #1559a1;
+    color: #e8edf3;
+}
+
+.addMovies-heading{
+    margin-bottom: 30px;
+}

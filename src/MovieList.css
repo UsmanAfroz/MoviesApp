@@ -1,0 +1,142 @@
+/* ... (previous CSS rules) ... */
+body {
+	background: #141414;
+	color: #ffffff;
+	margin: 0; /* Remove margin for the whole body */
+	padding: 0; /* Remove padding for the whole body */
+  }
+  
+
+  .row {
+	overflow-x: auto;
+	flex-wrap:nowrap;
+	
+	margin-left: 5px;
+
+  }
+  
+  .image-container {
+	margin-top: 2rem;
+    margin-right: 0.9rem;
+    width: 15%;
+    height: 19rem;
+    display: flex;
+}
+
+	
+	/* Add margin to the right of each image container */
+
+.image-container:hover{
+
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.addFavorites{
+		margin-top: 2rem;
+}
+
+
+  .image-effect{
+	position: relative;
+	transition: transform 0.2s;
+  }
+  
+  .image-container:last-child {
+	margin-right: 0; /* Remove margin from the last image container to prevent extra space */
+  }
+
+  /* .add-favorites{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+  } */
+
+  .overlay {
+	position: absolute;
+	background: rgba(21, 20, 20, 0.8);
+	width: 90%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 16px;
+	text-align: center;
+	margin-left: 10px;
+}
+  
+  /* .image-container > img {
+	
+    object-fit: cover;
+    margin-bottom: 15px;
+
+	
+  } */
+  
+  .goBack-button{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+  }
+
+  .backButton{
+	padding: 8px 5px;
+    background-color: #116fd3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 15px;
+    display: block;
+    width: 15%;
+  }
+
+  .backButton:hover{
+    background-color: rgb(190, 8, 8);
+  }
+
+  .space-x{
+	height: 70px;
+  }
+/* ... (previous CSS rules) ... */
+
+/* Media query for screens smaller than 768px (e.g., tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+	.row {
+	  flex-direction: column; /* Stack images vertically on smaller screens */
+	  align-items: center; /* Center-align images horizontally */
+	}
+  
+	.image-container {
+	  width: 90%; /* Adjust image container width for smaller screens */
+	  max-width: none; /* Remove max-width */
+	  margin-right: 0; /* Remove right margin to stack cards vertically */
+	  text-align: center; /* Center-align image and overlay content */
+	}
+  
+	.goBack-button {
+	  width: 100%; /* Make the button full width on mobile */
+	}
+  
+	.space-x {
+	  height: 2rem; /* Reduce the space between sections */
+	}
+  
+	.movie-list-heading {
+	  text-align: center; /* Center-align the heading */
+	}
+  
+	.search-box {
+	  text-align: center; /* Center-align the search box */
+	  margin-bottom: 1rem; /* Add spacing below the search box */
+	}
+  }
+  
